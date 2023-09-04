@@ -2,22 +2,25 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int age;
+        int num;
         Scanner sc = new Scanner(System.in);
-        age = sc.nextInt();
-        if(isEligible(age))
-        {
-            System.out.println("Eligible to vote");
-        }
-        else {
-            System.out.println("Not Eligible to vote");
+        num = sc.nextInt();
+        if (isPrime(num)) {
+            System.out.println("The number is prime");
+        } else {
+            System.out.println("the number is not prime");
         }
     }
-    static boolean isEligible(int age)
-    {
-        if (age>=18)
-            return true;
-        else
+
+    public static boolean isPrime(int num) {
+        if (num <= 1) {
             return false;
+        }
+        for (int i = 2; i <num/2; i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
     }
 }

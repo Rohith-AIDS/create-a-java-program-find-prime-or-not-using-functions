@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e7ac61e-9737-41c9-9b9f-c09a2d9618e6" name="Changes" comment="recursive">
+    <list default="true" id="8e7ac61e-9737-41c9-9b9f-c09a2d9618e6" name="Changes" comment="eligible to vote or not">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,12 +57,30 @@
       <option name="project" value="LOCAL" />
       <updated>1693811483947</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="rectangle">
+      <option name="closed" value="true" />
+      <created>1693813251821</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693813251821</updated>
+    </task>
+    <task id="LOCAL-00004" summary="eligible to vote or not">
+      <option name="closed" value="true" />
+      <created>1693813531570</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693813531570</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="even" />
     <MESSAGE value="recursive" />
-    <option name="LAST_COMMIT_MESSAGE" value="recursive" />
+    <MESSAGE value="rectangle" />
+    <MESSAGE value="eligible to vote or not" />
+    <option name="LAST_COMMIT_MESSAGE" value="eligible to vote or not" />
   </component>
 </project>
