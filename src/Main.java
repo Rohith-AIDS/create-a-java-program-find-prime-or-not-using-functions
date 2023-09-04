@@ -1,30 +1,34 @@
 import java.util.*;
-class Main
+
+class rectangle
 {
-    static int printOdd(int input)
+    double length,width;
+    public rectangle(double length, double width)
     {
-        if(input==1)
-        {
-            System.out.println(input);
-            return 0;
-        }
-        if(input%2!=0)
-        {
-            System.out.println(input);
-            printOdd(input-2);
-        }
+        this.length=length;
+        this.width=width;
 
-        if(input%2==0)
-        {
-            printOdd(input-2);
-        }
-        return 1;
     }
-
+    public double calculatearea()
+    {
+        double area=length*width;
+        return area;
+    }
+    public double calculatecircumference()
+    {
+        double circumference=2*(length+width);
+        return circumference;
+    }
+}
+public class Main
+{
     public static void main(String[] args)
-        {
-            Scanner in=new Scanner(System.in);
-            printOdd(in.nextInt());
-        }
-
+    {
+        Scanner input =new Scanner(System.in);
+        double rectangleLength = input.nextDouble();
+        double rectanglewidth=input.nextDouble();
+        rectangle obj=new rectangle(rectangleLength,rectanglewidth);
+        System.out.println(obj.calculatearea());
+        System.out.println(obj.calculatecircumference());
+    }
 }
