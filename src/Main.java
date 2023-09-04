@@ -1,34 +1,23 @@
-import java.util.*;
+import java.util.Scanner;
 
-class rectangle
-{
-    double length,width;
-    public rectangle(double length, double width)
-    {
-        this.length=length;
-        this.width=width;
-
+public class Main {
+    public static void main(String[] args) {
+        int age;
+        Scanner sc = new Scanner(System.in);
+        age = sc.nextInt();
+        if(isEligible(age))
+        {
+            System.out.println("Eligible to vote");
+        }
+        else {
+            System.out.println("Not Eligible to vote");
+        }
     }
-    public double calculatearea()
+    static boolean isEligible(int age)
     {
-        double area=length*width;
-        return area;
-    }
-    public double calculatecircumference()
-    {
-        double circumference=2*(length+width);
-        return circumference;
-    }
-}
-public class Main
-{
-    public static void main(String[] args)
-    {
-        Scanner input =new Scanner(System.in);
-        double rectangleLength = input.nextDouble();
-        double rectanglewidth=input.nextDouble();
-        rectangle obj=new rectangle(rectangleLength,rectanglewidth);
-        System.out.println(obj.calculatearea());
-        System.out.println(obj.calculatecircumference());
+        if (age>=18)
+            return true;
+        else
+            return false;
     }
 }
